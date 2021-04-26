@@ -1,12 +1,12 @@
 const express = require("express");
 const app = express();
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 1337
 
 
 app.get("/", (req, res) => {
     res.status(200).json({
         time : Date.now(),
-        server: 1 
+        server: 2
     });
     return;
 })
